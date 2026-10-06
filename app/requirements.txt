@@ -1,7 +1,3 @@
-import streamlit
-import sklearn
-import joblib
-
-print("Streamlit:", streamlit.__version__)
-print("Scikit-learn:", sklearn.__version__)
-print("Joblib:", joblib.__version__)
+streamlit==1.58.0
+scikit-learn==1.9.0
+joblib==1.5.3
