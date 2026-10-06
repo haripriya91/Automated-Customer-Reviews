@@ -1,0 +1,7 @@
+import streamlit
+import sklearn
+import joblib
+
+print("Streamlit:", streamlit.__version__)
+print("Scikit-learn:", sklearn.__version__)
+print("Joblib:", joblib.__version__)
