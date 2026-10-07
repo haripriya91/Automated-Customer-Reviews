@@ -1,0 +1,73 @@
+{
+  "category": "Amazon Device Accessories & Chargers",
+  "reviews_in_category": 532,
+  "products_ranked": 2,
+  "min_reviews_used": 10,
+  "pct_reviews_without_product_name": 24.8,
+  "most_reviewed_product": {
+    "name": "All New Kindle E Reader Black 6 Glare Free Touchscreen Display Wi-Fi Includes Special Offers",
+    "review_count": 211,
+    "average_rating": 4.43
+  },
+  "products": [
+    {
+      "name": "Amazon 5W USB Official OEM Charger And Power Adapter For Fire Tablets And Kindle Ereaders",
+      "role": "top",
+      "review_count": 188,
+      "average_rating": 4.45,
+      "positive_pct": 86.7,
+      "neutral_pct": 2.7,
+      "negative_pct": 10.6,
+      "negative_reviews_1_2_stars": 20,
+      "reviews_3_stars_or_less": 25,
+      "sample_of_positive_reviews": [
+        "(5 stars) Bought to use with Kindle. Works fine! Good quality and charges the kindle quickly.",
+        "(5 stars) Works just as you'd expect. Small and compact which is nice, and charges the kindle really quickly (faster than it charges on my laptop). A little expensive for what it is, but glad I ordered this.",
+        "(5 stars) So far this product has worked great. I bought it to replace my kindle charger that was no longer charging my older kindle fire. I bought a new USB cord as well. It charges my kindle so much faster than any of the other chargers I have. I would definitely recommend this product.",
+        "(5 stars) Great product... Met all my expectations"
+      ],
+      "sample_of_low_rated_reviews": [
+        "(1 stars) Most buyers will have a phone or other charger that will work so you probably don't need to buy this.",
+        "(1 stars) cheap - need to constantly make sure plugged in - slightly too small - saved some bucks there - not amazon quality",
+        "(1 stars) If you actually paid 20 for this adapter, you're out of your mind.",
+        "(1 stars) I wish this came in white to match my Kindle Paperwhite",
+        "(1 stars) Really expected a chord with it for the price we paid. Very dissapointed.",
+        "(1 stars) Not compatible with South African plug standards. Bought this unnecessarily.",
+        "(1 stars) It wasn't what I thought it was the price was too much for what I got Very disappointed",
+        "(1 stars) I had to buy it, what else is there to say.",
+        "(1 stars) 5 dollar AC to USB power adapter for 20 buck",
+        "(2 stars) Q: What's the difference between a 19.99 Amazon 5W USB Official OEM Charger and Power Supply and a 5.95 5V 1A (1000mA) USB port power supply - UL ListedA: 14.04 Calling it a 5W charger rather than a 5V 1A charger is a distinction without a difference."
+      ]
+    },
+    {
+      "name": "All New Kindle E Reader Black 6 Glare Free Touchscreen Display Wi-Fi Includes Special Offers",
+      "role": "top_and_weakest",
+      "review_count": 211,
+      "average_rating": 4.43,
+      "positive_pct": 84.8,
+      "neutral_pct": 7.1,
+      "negative_pct": 8.1,
+      "negative_reviews_1_2_stars": 17,
+      "reviews_3_stars_or_less": 32,
+      "sample_of_positive_reviews": [
+        "(5 stars) I'm very glad that I made this purchase. I don't often bring my computer with me when I travel. I enjoy having the option of using a standard outlet to charge the Paperwhite.",
+        "(4 stars) Works good but, you can purchase a charger with same or better specs. on Amazon MUCH cheaper. I purchased a 5 port 30 watt charger for about 1/2 of the cost of this.",
+        "(5 stars) great - can charge Kindle e-book reader without the need of computer being on.",
+        "(5 stars) So helpful to power up our readers anywhere."
+      ],
+      "sample_of_low_rated_reviews": [
+        "(1 stars) Pretty dumb that you have to.buy a charger port",
+        "(1 stars) Too expensive. Should be included, at no extra cost, with the Kindle.",
+        "(1 stars) My old kindle charger works fine - that wasn't clear when I bought a new kindle white. And now you want to charge me 6.95 to send it back. Forget it!! I'll keep the extra charger",
+        "(1 stars) This is honestly a little expensive. And I can find other ways to charge my devices.",
+        "(1 stars) A waste of money. You don't need this. Just plug your tablet into your computer and the charge lasts for a month.",
+        "(1 stars) Do not pay attention to their ad. It says the plug is not included with the kindle and it absolutely is. If they lie about this sort of thing what else do you think the lie about. Steer clear these guys are rip off artist.",
+        "(1 stars) Just got home and found the packet is empty, there is no product we ordered in it. What do we do now",
+        "(1 stars) feel it should have come with paperwhite kindle and that I should not have had to buy it",
+        "(1 stars) Whats the point of this without the cable to charge!",
+        "(2 stars) It was doing a great job charging my kindle, but now it takes almost all day to charge."
+      ]
+    }
+  ],
+  "data_warning": null
+}

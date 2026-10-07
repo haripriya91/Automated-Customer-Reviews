@@ -1,0 +1,73 @@
+{
+  "category": "Echo & Kindle Fire Devices",
+  "reviews_in_category": 855,
+  "products_ranked": 2,
+  "min_reviews_used": 10,
+  "pct_reviews_without_product_name": 29.9,
+  "most_reviewed_product": {
+    "name": "Echo White",
+    "review_count": 387,
+    "average_rating": 4.4
+  },
+  "products": [
+    {
+      "name": "Fire Tablet 7 Display Wi-Fi 8 GB Includes Special Offers Magenta",
+      "role": "top",
+      "review_count": 211,
+      "average_rating": 4.53,
+      "positive_pct": 91.5,
+      "neutral_pct": 7.1,
+      "negative_pct": 1.4,
+      "negative_reviews_1_2_stars": 3,
+      "reviews_3_stars_or_less": 18,
+      "sample_of_positive_reviews": [
+        "(5 stars) Small, light easy to read in any lighting. If you are looking for a device that serves one purpose, to read books anywhere, this is for you.",
+        "(4 stars) Nice basic reader. Had the first model kindle and this is quite a bit lighter",
+        "(4 stars) Bought this for my 90+ year-old, totally no-tech mom. Her first e-book is Gone with the Wind. She likes the size and ease of use.",
+        "(5 stars) Very useful for night time reading responsive and intuitive display"
+      ],
+      "sample_of_low_rated_reviews": [
+        "(1 stars) Am used to Kindle Fire which I love. No light to read by in the dark. Hard to navigate. This was a gift - would never purchase on my own.",
+        "(2 stars) The screen is too dark, and cannot adjust the brightness",
+        "(2 stars) 1st kindle screen failed & had to reboot often. Customer Service couldn't fix. Replaced. 2nd one screen reboots often. Customer service offered replace. Just want one that works. Can't get upgrade replacement",
+        "(3 stars) Disappointed to realize there is not a light for night reading. Size and weight is great.",
+        "(3 stars) It is affordable and it had Increased storage but no backlight and the screen could be better!",
+        "(3 stars) I thought it would be as big as small paper but turn out to be just like my palm. I think it is too small to read on it... not very comfortable as regular Kindle. Would definitely recommend a paperwhite instead.",
+        "(3 stars) In my opinion this model is too small and feels cheap. And sd card slot.",
+        "(3 stars) Its a decent reader for beginners. There is no backlight, so not good for reading in dark. also slips from hands, so purchase a cover if you buy it.",
+        "(3 stars) There is no way to lock the font size and it changes if you touch the screen. I liked my paper white better but it died.",
+        "(3 stars) This is a pretty cool little device. Im able to download books through wireless and read them later at my convenience. Only drawback is I wish it had more storage. But for the price, it works good."
+      ]
+    },
+    {
+      "name": "Echo White",
+      "role": "top_and_weakest",
+      "review_count": 387,
+      "average_rating": 4.4,
+      "positive_pct": 88.1,
+      "neutral_pct": 7.2,
+      "negative_pct": 4.7,
+      "negative_reviews_1_2_stars": 18,
+      "reviews_3_stars_or_less": 46,
+      "sample_of_positive_reviews": [
+        "(5 stars) Good for the price hard to beat it!!!!!!!!!!!!!!!!!",
+        "(5 stars) I love this product. Perfect size for travel. I take it everywhere. Great for watching videos as well.",
+        "(4 stars) Great little tablet once you get the hang of it. I bought this for my wife and she uses it daily without any issues.",
+        "(5 stars) Great price! Kids love it. Lots of space for apps!"
+      ],
+      "sample_of_low_rated_reviews": [
+        "(1 stars) Hopefully, this will at least work as an e-reader. Otherwise, Amazon has it locked up so tight one cannot do much else with it. And, even with my fiber optic Wi-Fi it is slower than cold molasses in January in Canada. Well, I needed a Kindle e-reader and for $40 that is ok.",
+        "(1 stars) This item is no good... will only last for 3 months & amazon basically tells you to f*** off",
+        "(1 stars) Bought two of them first one would not charge after the first day. The second one The screen went blank so I have to return it now only after a couple of days of use. Will not purchase any more of this kind.",
+        "(1 stars) charging port fault appeared in tablet after 2 weeks of purchase from BB, I went to BB store for warranty claim, they said to contact Amazon for any issue, Amazon said they didn't recognise my order in their system. Ended without any remedy.",
+        "(2 stars) This Amazon Fire is fine for just reading and minimal research and investigative work. Apart from e-reading, it is slow and unresponsive.",
+        "(2 stars) The thing broke within the first week. The charging port was bent and it wouldn't charge.",
+        "(2 stars) I bought this to use only one application. Oh, is it most difficult to get this thing to continuously work! And I still can't get the geek squad program to properly download onto the device. I'm pretty disappointed.",
+        "(2 stars) Poor response. Very sluggish. Even the Amazon app is slow. Not so on my Apple or Droid tablets. I've yet to load any apps.",
+        "(2 stars) No the best tabler, is loaded with bloatware from amazon.",
+        "(3 stars) I bought this product for my three-year-old son. The operating system is slightly complicated unlike the user-friendly iPad. Fortunately, it serves it's purpose as there are many books, apps, and movies fingertips."
+      ]
+    }
+  ],
+  "data_warning": null
+}

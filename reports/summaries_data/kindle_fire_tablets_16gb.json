@@ -1,0 +1,73 @@
+{
+  "category": "Kindle Fire Tablets – 16GB",
+  "reviews_in_category": 1104,
+  "products_ranked": 2,
+  "min_reviews_used": 10,
+  "pct_reviews_without_product_name": 0.0,
+  "most_reviewed_product": {
+    "name": "Brand New Amazon Kindle Fire 16 GB 7 Ips Display Tablet Wifi 16 GB Blue",
+    "review_count": 860,
+    "average_rating": 4.54
+  },
+  "products": [
+    {
+      "name": "Brand New Amazon Kindle Fire 16 GB 7 Ips Display Tablet Wifi 16 GB Blue",
+      "role": "top",
+      "review_count": 860,
+      "average_rating": 4.54,
+      "positive_pct": 93.1,
+      "neutral_pct": 4.1,
+      "negative_pct": 2.8,
+      "negative_reviews_1_2_stars": 24,
+      "reviews_3_stars_or_less": 59,
+      "sample_of_positive_reviews": [
+        "(5 stars) I bought the Voyage kindle as an anniversary present for my wife and she LOVES it. The new dim light feature and matted glass screen are pretty amazing and work like a charm. She's able to read in all manner of lighting and places. This is a great eReader.",
+        "(5 stars) best e reader to date. yes it's a bit pricey, but it reads like a real book.",
+        "(5 stars) Fast, solid, all the necessary features for an ebook. I like the side pressure page advance and the small size fits my small hands.",
+        "(5 stars) Replaced original paper white with this new model and the recipient just loves it!!"
+      ],
+      "sample_of_low_rated_reviews": [
+        "(1 stars) Gave it to my granddaughter and she loves it..I want to buy one for myself....",
+        "(1 stars) Worst product ever. Constantly screwing up and filled with ads you have to pay to remove. Best Buy refused to help when I wanted to return it",
+        "(1 stars) The protector was not made for the Fire 7 as it was to large and had no directions that were coherent. Worse purchase from Best Buy ever.",
+        "(1 stars) My first tablet was a Kindle. I was curious about the updated version. Very disappointed",
+        "(2 stars) The battery is having more and more trouble holding a charge. I bought the Fire in July and am now having to charge it every day in order to use it. I am not impressed and would not repurchase it.",
+        "(2 stars) Wasnt really impressed with the operating system. Was hoping it was more of android style. Not so much.",
+        "(2 stars) Kindle is good as long as it is plugged into a wall outlet. The battery lasts a mere 15 minutes as a portable unit. Not happy with this. Takes an hour to charge the battery to 100% yet drains in 15 minutes. There`s something mathematically wrong with this equation.",
+        "(1 stars) This is not like other android tablets in a bad way.",
+        "(2 stars) Bought it accidentally. Meant to get an 8 inch screen.",
+        "(1 stars) Too bad Amazon turned this tablet into a big advertising tool. Many apps dont work and the camera is not good."
+      ]
+    },
+    {
+      "name": "Fire Kids Edition Tablet 7 Display Wi-Fi 16 GB Green Kid Proof Case",
+      "role": "top_and_weakest",
+      "review_count": 241,
+      "average_rating": 4.47,
+      "positive_pct": 90.9,
+      "neutral_pct": 5.0,
+      "negative_pct": 4.1,
+      "negative_reviews_1_2_stars": 10,
+      "reviews_3_stars_or_less": 22,
+      "sample_of_positive_reviews": [
+        "(5 stars) This tablet has been so good that I bought 4 so far.All my nephews and nieces have one and they are loving it.",
+        "(4 stars) Purchased this for my son. Has room to upgrade memory to allow more books & games. But the speakers could be better or located in a better position.",
+        "(5 stars) This has been a great purchase. It fits all my tablet and e-reader needs.",
+        "(5 stars) Like how I was able to buy a version with more memory. Love this works great."
+      ],
+      "sample_of_low_rated_reviews": [
+        "(1 stars) Returned it. it was a poor reader and clearly would not last..",
+        "(2 stars) Loved my husbands 4th generation disappointed in my 5th generation. 4th generation has 2 speakers and sound is much louder than the current 5th generation. I purchased this expecting the same quality in sound, or better, since I use the kindle to watch my TV shows.",
+        "(2 stars) I can't update Facebook and a few other apps. It's not what I expected.",
+        "(1 stars) I I thought the buy For my child bc the kids mode but it was very poor",
+        "(2 stars) I purchased this tablet a week ago as a gift for my brother and it has restarted itself over ten times and has shut off while someone was on in on different occasions Will be getting my money back and getting a samsung..",
+        "(3 stars) Not a substitute for an iPad, but a really good tablet for reading and minimal internet usage.",
+        "(3 stars) I bought this as s present for my 65 year old grandma. She loves it. Very easy to operate. No issues",
+        "(3 stars) Great for first time tablet, but more advanced options available",
+        "(3 stars) Bought this tablet for 8 year old. It holding up good & she loves it. She enjoys playimg her games & being able to get on the internet.",
+        "(3 stars) Overall it is a good tablet, but I am not a fan of the limitations of the silk browser and Amazon app store."
+      ]
+    }
+  ],
+  "data_warning": null
+}
