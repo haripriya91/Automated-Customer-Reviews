@@ -1,68 +1,139 @@
-# Automated Customer Reviews
+# 🛍️ Automated Customer Review Analysis System
 
-An NLP project that analyzes Amazon customer reviews through **sentiment classification, product clustering, and AI-generated category buying guides**.
+An end-to-end Natural Language Processing (NLP) project that automatically analyzes Amazon customer reviews to extract valuable insights. The system performs sentiment classification, product category clustering, generative AI review summarization, visualization and provides a deployable sentiment analysis web application.
 
-**Live demo:** [Try the sentiment analyzer](https://automated-customer-reviews.streamlit.app/)
+🚀 **Live Demo:** https://automated-customer-reviews.streamlit.app/
 
-## Project Overview
+## 📌 Project Overview
 
-Thousands of customer reviews can be difficult to analyze manually. This project explores ways to turn review text into useful signals: predict its sentiment, group similar products, and summarize customer feedback into category-level recommendations.
+Online shopping platforms contain thousands of customer reviews, making it difficult for consumers and businesses to manually analyze feedback. This project leverages modern NLP and Generative AI techniques to transform large amounts of customer review data into useful insights about customer sentiment, product categories, complaints, and overall product performance.
 
-## Features
+## 🏗️ System Architecture
 
-* **Sentiment analysis:** Classifies a review as positive, neutral, or negative. The Streamlit app also displays a probability for each class.
-* **Product clustering:** Uses TF-IDF features and K-Means to group products into interpretable meta-categories.
-* **Buying guides:** Uses prepared category-level review evidence and Claude to generate summaries covering popular products, common complaints, and recommendations.
+```text
+┌─────────────────────┐
+│  Amazon Reviews     │
+│      Dataset        │
+└──────────┬──────────┘
+           │
+           ▼
+┌─────────────────────┐
+│ Data Preprocessing  │
+│ • Cleaning          │
+│ • Deduplication     │
+│ • Feature Creation  │
+└──────────┬──────────┘
+           │
+   ┌───────┴────────┐
+   │                │
+   ▼                ▼
+┌──────────┐   ┌─────────────┐
+│Sentiment │   │ Clustering  │
+│ Analysis │   │   Model     │
+│ (Task 1) │   │  (Task 2)   │
+└────┬─────┘   └──────┬──────┘
+     │                │
+     ▼                ▼
+ Sentiment      Product Categories
+ Predictions          │
+     │                │
+     └────────┬───────┘
+              ▼
+      Review Insight Extraction
+              │
+              ▼
+         Claude API
+              │
+              ▼
+     Summary Generation
+          (Task 3)
+              │
+              ▼
+        Recommendation
+           Articles
 
-## Method
+┌─────────────────────┐
+│  Streamlit App      │
+│     (Task 4)        │
+└──────────┬──────────┘
+           ▼
+  Real-Time Sentiment
+      Prediction
 
-1. Explore and preprocess the review dataset.
-2. Train and evaluate sentiment classifiers using TF-IDF features.
-3. Compare Logistic Regression, Multinomial Naive Bayes, and Linear SVM using accuracy and macro F1.
-4. Select Logistic Regression for the deployed sentiment analyzer based on its balanced performance across sentiment classes and comparable cross-validation results.
-5. Compare K-Means clustering configurations for 4–6 groups and label the resulting product categories.
-6. Prepare category-level review evidence and generate buying guides with Claude.
+┌─────────────────────┐
+│ Bonus Visualizations│
+│ • Sentiment Trends  │
+│ • Cluster Analysis  │
+│ • Product Insights  │
+└─────────────────────┘
+```
 
-## Sentiment Model Results
 
-The final Logistic Regression model achieved **86.00% accuracy** on the held-out test set.
+## 📊 Primary Dataset
+**Amazon Product Reviews**
+- Source: Kaggle
+- File Used: `1429_1.csv`
+- Size: ~34,000 reviews 
 
-Because the dataset is highly imbalanced toward positive reviews, we compared models using **macro F1 as well as accuracy**. Accuracy alone can be misleading when one class dominates the dataset.
+## ✨ Main Features
 
-Multinomial Naive Bayes reached **93.33% accuracy** but only **32.19% macro F1**, with an F1-score of zero for both negative and neutral reviews. Logistic Regression performed more evenly across the three sentiment classes.
+* **Sentiment Analysis** – Classify customer reviews into  Positive, Neutral, or Negative.
+* **Product Category Clustering** – Group similar products into meaningful meta-categories using TF-IDF features and K-means.
+* **Buying guides** – Generate category-level summary articles.
+* **Web Application Deployment** – Provide an accessible interface for sentiment prediction.
+* **Bonus - Visualization** - Visualize important patterns and insights from the review dataset.
 
-Linear SVM achieved a slightly higher macro F1 than Logistic Regression (**54.83% vs. 53.97%**), but the cross-validation ranges nearly overlap. We therefore used Logistic Regression for the deployed demo because it provided comparable overall performance while producing a well-balanced baseline across the sentiment classes.
 
-| Sentiment | Precision | Recall | F1-score | Test samples |
-| --------- | --------: | -----: | -------: | -----------: |
-| Negative  |       33% |    59% |      42% |          162 |
-| Neutral   |       17% |    43% |      24% |          300 |
-| Positive  |       98% |    89% |      93% |        6,461 |
+## 📊 Sentiment Analysis Results
 
-### Confusion Matrix
+The final **Logistic Regression** model achieved **86.0% accuracy** and was selected as the deployment model due to its balanced performance across all sentiment classes.
 
-Rows represent the actual class, while columns represent the predicted class.
+| Sentiment | Precision | Recall | F1-Score |
+|-----------|----------:|--------:|---------:|
+| Negative | 33% | 59% | 42% |
+| Neutral | 17% | 43% | 24% |
+| Positive | 98% | 89% | 93% |
 
-| Actual \ Predicted | Negative | Neutral | Positive |
-| ------------------ | -------: | ------: | -------: |
-| Negative           |       96 |      42 |       24 |
-| Neutral            |       57 |     129 |      114 |
-| Positive           |      142 |     590 |    5,729 |
+## Confusion Matrix
+ 
+The model performs very well on positive reviews while maintaining reasonable detection of negative and neutral sentiments despite the dataset's class imbalance.
+ 
+reports/figures/cm_final_model.png
 
-![Sentiment model confusion matrix](reports/figures/cm_final_model.png)
 
-## Product Category Summaries
+## Product Category Clustering
+The second task uses unsupervised learning to group similar products into product meta-categories.
+Since the original dataset contains many individual products, clustering helps organize them into broader categories. 
 
-The project contains generated buying guides for the following categories:
+## Approach
+- Prepare product-level information.
+- Convert product information into numerical representations.
+- Apply clustering using K-means.
+- Determine an appropriate number of clusters.
+- Assign each product to a cluster.
+- Analyze the products within each cluster.
+- Give meaningful names to the resulting clusters.
 
-* Amazon Device Accessories & Chargers
-* Echo & Kindle Fire Devices
-* Echo & Smart Home Devices
-* Fire Kids Edition Tablets & Accessories
-* Kindle & Fire Devices – Special Offers
-* Kindle Fire Tablets – 16GB
+
+## 🤖 AI-Powered Product Category Review Summarization
+ 
+Product insights extracted from clustered reviews are sent to the Claude API to generate concise recommendation-style summaries. Each summary highlights key products, customer sentiment, common complaints, and notable review trends, helping users quickly understand product categories without reading thousands of reviews.
 
 See the [reports/summaries/](reports/summaries/) directory for the full guides.
+
+
+## 🛠️ Technologies Used
+ 
+| Category | Tools & Technologies |
+|-----------|---------------------|
+| **Programming Language** | Python |
+| **Data Processing** | Pandas, NumPy |
+| **Natural Language Processing** | Scikit-learn, TF-IDF, Text Vectorization, N-gram Analysis, Sentiment Analysis |
+| **Visualization** | Matplotlib, Seaborn |
+| **Machine Learning** | Scikit-Learn |
+| **Generative AI** | Claude API is used to generate category-level summary |
+| **Deployment** | Streamlit |
+
 
 ## Run the Sentiment App Locally
 
@@ -115,4 +186,119 @@ The test set contains substantially more positive reviews than neutral or negati
 
 The lower F1-scores for neutral and negative reviews show that overall accuracy does not tell the whole story. The model can identify positive reviews reliably, but distinguishing neutral and negative reviews remains more challenging.
 
-Similarly, the generated category buying guides depend on the quality and coverage of the underlying review data and should therefore be treated as **analysis aids rather than definitive purchasing recommendations**.
+Similarly, the generated category buying guides depend on the quality and coverage of the underlying review data and should therefore be treated as **analysis aids rather than definitive purchasing recommendations**. 
+
+# Authors
+**Haripriya Pushpamangalam Kesavan, **
+**Anita Kiran** 
+
+---
+ 
+# License
+ 
+This project was developed for educational and research purposes.
+
+
+```text
+Amazon Reviews Dataset
+         │
+         ▼
+   Pandas / NumPy
+ Data Preprocessing
+         │
+         ▼
+      TF-IDF
+         │
+ ┌───────┴────────┐
+ ▼                ▼
+Logistic      K-Means
+Regression   Clustering
+(Task 1)     (Task 2)
+ ▼                ▼
+Sentiment    Categories
+Results
+      \      /
+       \    /
+        ▼  ▼
+  Review Insights
+        │
+        ▼
+   Claude API
+        │
+        ▼
+ Buying Guides
+        │
+        ▼
+ Streamlit App
+```
+
+
+```mermaid
+flowchart TD
+
+A[Amazon Reviews Dataset] --> B[Data Preprocessing]
+
+B --> C[Sentiment Analysis]
+B --> D[Product Clustering]
+
+C --> E[Sentiment Labels]
+D --> F[Product Categories]
+
+E --> G[Review Insights]
+F --> G
+
+G --> H[Claude API]
+H --> I[Buying Guides]
+
+C --> J[Streamlit App]
+J --> K[Real-Time Sentiment Prediction]
+
+B --> L[Visualizations]
+```
+
+
+```text
+┌─────────────────────┐
+│ Amazon Reviews Data │
+└──────────┬──────────┘
+           │
+           ▼
+┌─────────────────────┐
+│ Data Preprocessing  │
+│ • Cleaning          │
+│ • Deduplication     │
+│ • Feature Creation  │
+└──────────┬──────────┘
+           │
+ ┌─────────┴─────────┐
+ │                   │
+ ▼                   ▼
+Sentiment       Product Category
+Analysis          Clustering
+(Task 1)          (Task 2)
+ │                   │
+ ▼                   ▼
+Sentiment      Meta-Categories
+Labels
+ │                   │
+ └───────┬───────────┘
+         ▼
+ Review Insights
+ Extraction
+         │
+         ▼
+    Claude API
+         │
+         ▼
+ Category Buying
+     Guides
+   (Task 3)
+
+         ▼
+  Streamlit App
+   (Task 4)
+         │
+         ▼
+ Real-time Review
+ Classification
+```
