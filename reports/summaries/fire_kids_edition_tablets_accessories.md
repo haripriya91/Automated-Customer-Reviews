@@ -1,6 +1,6 @@
 # Fire Kids Edition Tablets & Accessories
 
-# Fire Kids Edition Tablets & Accessories Buying Guide
+## Buying Guide
 
 ## Overview
 

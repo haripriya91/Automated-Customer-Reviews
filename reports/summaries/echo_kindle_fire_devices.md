@@ -1,6 +1,6 @@
 # Echo & Kindle Fire Devices
 
-# Echo & Kindle Fire Devices Buying Guide
+## Buying Guide
 
 ## Overview
 

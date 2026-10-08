@@ -1,6 +1,6 @@
 # Kindle Fire Tablets – 16GB
 
-# Kindle Fire Tablets – 16GB Buying Guide
+## Buying Guide
 
 ## Overview
 

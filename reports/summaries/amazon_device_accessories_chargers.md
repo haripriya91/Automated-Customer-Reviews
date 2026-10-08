@@ -1,6 +1,6 @@
 # Amazon Device Accessories & Chargers
 
-# Amazon Device Accessories & Chargers Buying Guide
+## Buying Guide
 
 ## Overview
 

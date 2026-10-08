@@ -1,6 +1,6 @@
 # Kindle & Fire Devices – Special Offers
 
-# Kindle & Fire Devices – Special Offers Buying Guide
+## Buying Guide
 
 ## Overview
 

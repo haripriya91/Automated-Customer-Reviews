@@ -1,6 +1,6 @@
 # Echo & Smart Home Devices
 
-# Echo & Smart Home Devices Buying Guide
+## Buying Guide
 
 ## Overview
 
