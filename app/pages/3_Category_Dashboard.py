@@ -270,7 +270,7 @@ if products:
 
 st.divider()
 
-st.subheader("🤖 AI-Generated Category Insights")
+st.subheader("AI-Generated Category Insights")
 
 # Convert category name to the same filename format
 import re
@@ -357,15 +357,4 @@ if products:
                     st.write(f"• {review}")
 
 
-# --------------------------------------------------
-# Navigation
-# --------------------------------------------------
-
-st.divider()
-
-st.page_link(
-    "pages/2_Review_Dashboard.py",
-    label="← Back to Review Analytics Dashboard",
-    icon="📊"
-)
 

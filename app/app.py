@@ -37,13 +37,68 @@ st.write(
 
 
 # --------------------------------------------------
+# Example reviews
+# --------------------------------------------------
+
+st.subheader("💡 Try an example review")
+
+col1, col2, col3 = st.columns(3)
+
+if "review_text" not in st.session_state:
+    st.session_state.review_text = ""
+
+
+with col1:
+
+    if st.button(
+        "😊 Positive",
+        use_container_width=True
+    ):
+
+        st.session_state.review_text = (
+            "The sound quality is excellent for the price. "
+            "Setup was easy and the battery lasts much longer "
+            "than I expected. Very happy with this purchase."
+        )
+
+
+with col2:
+
+    if st.button(
+        "😞 Negative",
+        use_container_width=True
+    ):
+
+        st.session_state.review_text = (
+            "I was disappointed with the quality. "
+            "The device stopped working after only a few days "
+            "and customer support did not provide a useful solution."
+        )
+
+
+with col3:
+
+    if st.button(
+        "😐 Neutral",
+        use_container_width=True
+    ):
+
+        st.session_state.review_text = (
+            "The product arrived on time and works as described, but the performance is just okay given the price."
+            "I honestly expected better. While it handles basic tasks fine, the overall experience feels sluggish and the build quality feels a bit cheap and plasticky."
+            "It's a decent middle-of-the-road option if you are on a strict budget, but if you are looking for longevity or seamless performance, it might be worth spending a bit more on a higher-end alternative."
+        )
+
+
+# --------------------------------------------------
 # Review input
 # --------------------------------------------------
 
 review = st.text_area(
     "Enter your review",
     placeholder="Write your Amazon review here...",
-    height=120
+    height=120,
+    key="review_text"
 )
 
 
@@ -63,6 +118,7 @@ if st.button(
     else:
 
         prediction = pipe.predict([review])[0]
+
         probabilities = pipe.predict_proba([review])[0]
 
         predicted_index = list(pipe.classes_).index(prediction)
@@ -101,7 +157,7 @@ if st.button(
         # Prediction probabilities
         # --------------------------------------------------
 
-        st.subheader("📊 Prediction Probabilities")
+        st.subheader("📊 Confidence scores")
 
         cols = st.columns(len(pipe.classes_))
 
@@ -129,20 +185,3 @@ if st.button(
                 )
 
                 st.progress(float(probability))
-
-
-# --------------------------------------------------
-# Dashboard link
-# --------------------------------------------------
-
-st.divider()
-
-st.info(
-    "📊 Want to explore the complete Amazon review dataset?"
-)
-
-st.page_link(
-    "pages/2_Review_Dashboard.py",
-    label="Open Review Analytics Dashboard →",
-    icon="📊"
-)

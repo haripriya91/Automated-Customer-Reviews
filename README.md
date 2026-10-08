@@ -60,13 +60,13 @@ Online shopping platforms contain thousands of customer reviews, making it diffi
 
 ## Sentiment Analysis Results
 
-The final Logistic Regression model achieved 86.0% accuracy and a macro F1-score of 0.53. Although the accuracy is relatively high, the macro F1-score highlights the difficulty of correctly identifying the minority negative and neutral classes.
+The final class-weight-tuned Logistic Regression model achieved 90.13% accuracy and a macro F1-score of 0.56. Class weighting improved the detection of negative and neutral reviews while maintaining strong performance on positive reviews. However, identifying neutral sentiment remains challenging.
 
 | Sentiment | Precision | Recall | F1-Score | Support |
 | --------- | --------: | -----: | -------: | ------: |
-| Negative  |       33% |    59% |      42% |     162 |
-| Neutral   |       17% |    43% |      24% |     300 |
-| Positive  |       98% |    89% |      93% |   6,461 |
+| Negative  |       41% |    52% |      46% |     162 |
+| Neutral   |       22% |    35% |      27% |     300 |
+| Positive  |       97% |    94% |      95% |   6,461 |
 
 
 ## Confusion Matrix

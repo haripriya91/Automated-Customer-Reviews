@@ -81,7 +81,7 @@ with col2:
 with col3:
     st.metric(
         "Products Analysed",
-        total_products
+        39
     )
 
 
@@ -100,7 +100,7 @@ category_df = pd.DataFrame(
         {
             "Category": category["category"],
             "Reviews": category["reviews_in_category"],
-            "Products": category["products_ranked"]
+            "Top Products": category["products_ranked"]
         }
         for category in categories
     ]
@@ -126,11 +126,3 @@ st.bar_chart(
     chart_df["Reviews"]
 )
 
-
-st.divider()
-
-st.page_link(
-    "pages/3_Category_Dashboard.py",
-    label="Open detailed category analysis →",
-    icon="🔎"
-)
