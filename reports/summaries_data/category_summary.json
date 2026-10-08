@@ -1,0 +1,50 @@
+[
+  {
+    "category": "Kindle & Fire Devices – Special Offers",
+    "reviews_in_category": 18109,
+    "products_ranked": 14,
+    "pct_reviews_without_product_name": 0.0,
+    "most_reviewed_product": "Fire Tablet 7 Display Wi-Fi 8 GB Includes Special Offers Magenta",
+    "detail_file": "kindle_fire_devices_special_offers.json"
+  },
+  {
+    "category": "Fire Kids Edition Tablets & Accessories",
+    "reviews_in_category": 1696,
+    "products_ranked": 2,
+    "pct_reviews_without_product_name": 0.0,
+    "most_reviewed_product": "Fire Kids Edition Tablet 7 Display Wi-Fi 16 GB Green Kid Proof Case",
+    "detail_file": "fire_kids_edition_tablets_accessories.json"
+  },
+  {
+    "category": "Amazon Device Accessories & Chargers",
+    "reviews_in_category": 532,
+    "products_ranked": 2,
+    "pct_reviews_without_product_name": 24.8,
+    "most_reviewed_product": "All New Kindle E Reader Black 6 Glare Free Touchscreen Display Wi-Fi Includes Special Offers",
+    "detail_file": "amazon_device_accessories_chargers.json"
+  },
+  {
+    "category": "Echo & Kindle Fire Devices",
+    "reviews_in_category": 855,
+    "products_ranked": 2,
+    "pct_reviews_without_product_name": 29.9,
+    "most_reviewed_product": "Echo White",
+    "detail_file": "echo_kindle_fire_devices.json"
+  },
+  {
+    "category": "Kindle Fire Tablets – 16GB",
+    "reviews_in_category": 1104,
+    "products_ranked": 2,
+    "pct_reviews_without_product_name": 0.0,
+    "most_reviewed_product": "Brand New Amazon Kindle Fire 16 GB 7 Ips Display Tablet Wifi 16 GB Blue",
+    "detail_file": "kindle_fire_tablets_16gb.json"
+  },
+  {
+    "category": "Echo & Smart Home Devices",
+    "reviews_in_category": 12318,
+    "products_ranked": 5,
+    "pct_reviews_without_product_name": 46.3,
+    "most_reviewed_product": "Echo White",
+    "detail_file": "echo_smart_home_devices.json"
+  }
+]

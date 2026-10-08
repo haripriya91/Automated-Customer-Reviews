@@ -3,69 +3,146 @@ import joblib
 import streamlit as st
 
 
+# --------------------------------------------------
+# Page configuration
+# --------------------------------------------------
+
+st.set_page_config(
+    page_title="Amazon Review Analyzer",
+    page_icon="🛒",
+    layout="centered"
+)
+
+
+# --------------------------------------------------
+# Paths
+# --------------------------------------------------
+
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 MODEL_PATH = BASE_DIR / "models" / "sentiment_pipeline.pkl"
 
 pipe = joblib.load(MODEL_PATH)
 
-# Page configuration
-st.set_page_config(
-    page_title="Amazon Review Analyzer",
-)
 
+# --------------------------------------------------
+# Header
+# --------------------------------------------------
 
-# Title
-st.title("Amazon Review Analyzer")
+st.header("🛒 Amazon Review Analyzer")
 
 st.write(
-    "Enter a customer review to predict whether "
-    "the sentiment is negative, neutral, or positive."
+    "AI-powered sentiment analysis of Amazon customer reviews."
 )
 
 
+# --------------------------------------------------
 # Review input
+# --------------------------------------------------
+
 review = st.text_area(
-    "Enter a customer review",
-    placeholder="Write your review here..."
+    "Enter your review",
+    placeholder="Write your Amazon review here...",
+    height=120
 )
 
 
-# Analyze button
-if st.button("Analyze Sentiment"):
+# --------------------------------------------------
+# Analyze
+# --------------------------------------------------
 
-    if review.strip() == "":
+if st.button(
+    "🔍 Analyze Sentiment",
+    use_container_width=True
+):
+
+    if not review.strip():
+
         st.warning("Please enter a review.")
 
     else:
 
-        # Prediction
         prediction = pipe.predict([review])[0]
-
-        # Probabilities
         probabilities = pipe.predict_proba([review])[0]
 
-        # Show prediction
-        st.subheader("Prediction")
+        predicted_index = list(pipe.classes_).index(prediction)
+
+        confidence = probabilities[predicted_index]
+
+
+        # --------------------------------------------------
+        # Result
+        # --------------------------------------------------
+
+        st.divider()
+
+        st.subheader("🔍 Analysis Result")
 
         if prediction == "positive":
-            st.success("Positive")
+
+            st.success(
+                f"😊 Positive — {confidence:.1%} probability"
+            )
 
         elif prediction == "negative":
-            st.error("Negative")
+
+            st.error(
+                f"😞 Negative — {confidence:.1%} probability"
+            )
 
         else:
-            st.warning("Neutral")
+
+            st.warning(
+                f"😐 Neutral — {confidence:.1%} probability"
+            )
 
 
-        # Show confidence scores
-        st.subheader("Confidence Scores")
+        # --------------------------------------------------
+        # Prediction probabilities
+        # --------------------------------------------------
 
-        for label, probability in zip(
+        st.subheader("📊 Prediction Probabilities")
+
+        cols = st.columns(len(pipe.classes_))
+
+        for col, label, probability in zip(
+            cols,
             pipe.classes_,
             probabilities
         ):
-            st.write(
-                f"**{label.capitalize()}**: "
-                f"{probability:.2%}"
-            )
+
+            with col:
+
+                if label == "positive":
+                    emoji = "😊"
+
+                elif label == "negative":
+                    emoji = "😞"
+
+                else:
+                    emoji = "😐"
+
+
+                st.metric(
+                    label=f"{emoji} {label.capitalize()}",
+                    value=f"{probability:.1%}"
+                )
+
+                st.progress(float(probability))
+
+
+# --------------------------------------------------
+# Dashboard link
+# --------------------------------------------------
+
+st.divider()
+
+st.info(
+    "📊 Want to explore the complete Amazon review dataset?"
+)
+
+st.page_link(
+    "pages/2_Review_Dashboard.py",
+    label="Open Review Analytics Dashboard →",
+    icon="📊"
+)
