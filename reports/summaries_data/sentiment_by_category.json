@@ -1,0 +1,110 @@
+[
+  {
+    "meta_category":"Amazon Device Accessories & Chargers",
+    "sentiment":"negative",
+    "count":69,
+    "percentage":12.97
+  },
+  {
+    "meta_category":"Amazon Device Accessories & Chargers",
+    "sentiment":"neutral",
+    "count":27,
+    "percentage":5.08
+  },
+  {
+    "meta_category":"Amazon Device Accessories & Chargers",
+    "sentiment":"positive",
+    "count":436,
+    "percentage":81.95
+  },
+  {
+    "meta_category":"Echo & Kindle Fire Devices",
+    "sentiment":"negative",
+    "count":29,
+    "percentage":3.39
+  },
+  {
+    "meta_category":"Echo & Kindle Fire Devices",
+    "sentiment":"neutral",
+    "count":56,
+    "percentage":6.55
+  },
+  {
+    "meta_category":"Echo & Kindle Fire Devices",
+    "sentiment":"positive",
+    "count":770,
+    "percentage":90.06
+  },
+  {
+    "meta_category":"Echo & Smart Home Devices",
+    "sentiment":"negative",
+    "count":186,
+    "percentage":1.51
+  },
+  {
+    "meta_category":"Echo & Smart Home Devices",
+    "sentiment":"neutral",
+    "count":399,
+    "percentage":3.24
+  },
+  {
+    "meta_category":"Echo & Smart Home Devices",
+    "sentiment":"positive",
+    "count":11733,
+    "percentage":95.25
+  },
+  {
+    "meta_category":"Fire Kids Edition Tablets & Accessories",
+    "sentiment":"negative",
+    "count":58,
+    "percentage":3.42
+  },
+  {
+    "meta_category":"Fire Kids Edition Tablets & Accessories",
+    "sentiment":"neutral",
+    "count":94,
+    "percentage":5.54
+  },
+  {
+    "meta_category":"Fire Kids Edition Tablets & Accessories",
+    "sentiment":"positive",
+    "count":1544,
+    "percentage":91.04
+  },
+  {
+    "meta_category":"Kindle & Fire Devices \u2013 Special Offers",
+    "sentiment":"negative",
+    "count":434,
+    "percentage":2.4
+  },
+  {
+    "meta_category":"Kindle & Fire Devices \u2013 Special Offers",
+    "sentiment":"neutral",
+    "count":876,
+    "percentage":4.84
+  },
+  {
+    "meta_category":"Kindle & Fire Devices \u2013 Special Offers",
+    "sentiment":"positive",
+    "count":16799,
+    "percentage":92.77
+  },
+  {
+    "meta_category":"Kindle Fire Tablets \u2013 16GB",
+    "sentiment":"negative",
+    "count":34,
+    "percentage":3.08
+  },
+  {
+    "meta_category":"Kindle Fire Tablets \u2013 16GB",
+    "sentiment":"neutral",
+    "count":47,
+    "percentage":4.26
+  },
+  {
+    "meta_category":"Kindle Fire Tablets \u2013 16GB",
+    "sentiment":"positive",
+    "count":1023,
+    "percentage":92.66
+  }
+]

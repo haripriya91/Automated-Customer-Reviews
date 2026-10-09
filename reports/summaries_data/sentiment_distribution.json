@@ -1,0 +1,17 @@
+[
+  {
+    "sentiment":"positive",
+    "count":32305,
+    "percentage":93.33
+  },
+  {
+    "sentiment":"neutral",
+    "count":1499,
+    "percentage":4.33
+  },
+  {
+    "sentiment":"negative",
+    "count":810,
+    "percentage":2.34
+  }
+]
